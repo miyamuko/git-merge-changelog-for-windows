@@ -292,7 +292,7 @@ read_changelog_file (const char *filename, struct changelog_file *result)
   /* Read the file in text mode, otherwise it's hard to recognize empty
      lines.  */
   size_t length;
-  char *contents = read_file (filename, &length);
+  char *contents = read_binary_file (filename, &length);
   if (contents == NULL)
     {
       fprintf (stderr, "could not read file '%s'\n", filename);
@@ -1640,7 +1640,7 @@ There is NO WARRANTY, to the extent permitted by law.\n\
 
     /* Output the result.  */
     {
-      FILE *fp = fopen (destination_file_name, "w");
+      FILE *fp = fopen (destination_file_name, "wb");
       if (fp == NULL)
         {
           fprintf (stderr, "could not write file '%s'\n", destination_file_name);
