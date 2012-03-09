@@ -2,7 +2,7 @@
 
 ## DOWNLOAD
 
-<https://github.com/downloads/miyamuko/git-merge-changelog-for-windows/git-merge-changelog-for-windows.exe>
+<https://github.com/downloads/miyamuko/git-merge-changelog-for-windows/git-merge-changelog.exe>
 
 
 ## USAGE
